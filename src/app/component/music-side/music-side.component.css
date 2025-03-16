@@ -1,0 +1,35 @@
+.plyr--audio {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.musica_container{
+    background-color: rgb(242, 240, 240);
+    gap: 15px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagen_music img{
+    width:clamp(20px, 4vw + 1.5rem, fit-content) ;
+    height: (20px, 4vw + 1.5rem, fit-content);
+}
+
+.card-body audio{
+    width: 100%;
+    border-radius: 5px;
+} 
+
+@media screen and (max-width:880px){
+    .musica_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 2px ;
+        padding-right: 2px ;
+    }
+}

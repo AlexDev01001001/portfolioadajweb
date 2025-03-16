@@ -1,0 +1,75 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.me{
+    font-family:'AUGI' ;
+}
+
+.col-md-4 img{
+    transition:  transform 0.3s ease-in-out;
+}
+
+.col-md-4 img:hover{
+    transform: scale(1.1);
+}
+
+.plyr--audio {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.musica_container{
+    background-color: rgb(242, 240, 240);
+    gap: 15px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagen_music img{
+    width:fit-content ;
+    height: fit-content;
+}
+
+.card-body audio{
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:460px){
+    .tarjetas{
+        padding-left: 2vh;
+        padding-right: 2vh ;
+    }
+
+    .col-md-4 img{
+        transition:  none;
+    }
+
+    .card-body{
+        font-size: 85%;
+    }
+
+    .col-md-4 img:hover{
+        transform: none;
+    }
+}
+
+@media screen and (max-width:1040px){
+    .tarjetas{
+        padding-left: 2vh;
+        padding-right: 2vh ;
+    }
+}
+
+
+

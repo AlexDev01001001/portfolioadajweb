@@ -1,0 +1,124 @@
+.container{
+    display: flex;
+    background-color: rgb(213, 212, 212);
+    flex-wrap: wrap; 
+    width: 90%; 
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 1200px; 
+    margin: 60px auto 40px; 
+    padding: 20px;
+}
+
+.texto{
+    font-family: 'STRAW';
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    color:rgb(0, 0, 0); 
+}
+
+.part_A{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.part_BC{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.part_B{
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1vh;
+}
+
+.part_C{
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1vh;
+    margin-left: 20px;
+}
+
+.part_B img{
+    width:100px;
+    height: 100px;
+}
+
+.part_C img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+ 
+
+
+.nav-link {
+    text-decoration: none; 
+    color: inherit; 
+
+}
+
+
+.nav-link i {
+    color: #da9109;
+}
+
+
+.nav-link {
+    font-weight: bold; 
+    color: rgb(35, 111, 173);
+    display: block;
+}
+
+
+.nav-link span {
+    color: #333333;
+    font-weight: normal;
+}
+
+.nav-item {
+    display: block; 
+    margin-bottom: 8px; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        width: 95%; 
+        padding: 15px;
+    }
+
+    .texto {
+        font-size: 40px; 
+    }
+
+    .part_A, .part_BC {
+        width: 100%; 
+    }
+
+    .part_C {
+        justify-content: center;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .part_C img {
+        width: 60px; 
+        height: 60px;
+    }
+}

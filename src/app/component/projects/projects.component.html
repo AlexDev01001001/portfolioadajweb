@@ -1,0 +1,23 @@
+<section id="Proyectos">
+    <div class="Proyectos">
+        <h1>Proyectos</h1>
+      </div>
+      
+      <div class="slider-box">
+        <ul>
+          <li *ngFor="let proyecto of proyectos">
+            <img [src]="proyecto.imagen" alt="Proyecto">
+            <button class="detalle-btn" (click)="seleccionarProyecto(proyecto)">Ver detalle</button>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Modal personalizado -->
+      <div *ngIf="proyectoSeleccionado" class="modal-overlay">
+        <div class="modal-content">
+          <h2>{{ proyectoSeleccionado.nombre }}</h2>
+          <p>{{ proyectoSeleccionado.descripcion }}</p>
+          <button (click)="cerrarModal()">Cerrar</button>
+        </div>
+      </div>
+</section>

@@ -1,0 +1,152 @@
+.main_info img {
+    width: 250px;  
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    background-color: rgb(123, 193, 250);
+    justify-content: center;
+    align-items: center;
+}
+
+.main_info{
+    display: table-column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about_me{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    flex-direction: column;
+}
+
+.about_me_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about_me_text h1 {
+    display: flex;
+    gap:11px;
+    width:11ch;
+    animation: typing 2s steps(10),
+    blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 1vh;
+    text-align: center; 
+}
+
+.alex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about_me_text h2{
+    font-size: 25px;
+    padding-top: 1vh;
+    font-family: monospace;
+    text-align: center;
+}
+
+.about_me h3{
+    font-size: 20px;
+    padding-top: 1vh;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.name{
+    color: black;
+    text-align: center;
+}
+.first_name{
+    color:rgb(5, 104, 184);
+    text-align: center;
+
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+.stack_imagenes{
+    display: inline-flex;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: black;
+    width: fit-content;
+    gap: 2vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.stack_imagenes img{
+    width: clamp(50px, 4vw + 1.5rem, 100px);
+    height: clamp(50px, 4vw + 1.5rem, 100px);
+    object-fit: contain;
+    padding: 0.5vh;
+   
+}
+
+
+.stack{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    background-color: rgb(242, 240, 240);
+    padding-bottom: 4vh;
+}
+
+.container_total{
+    padding-top: 4vh;
+    position: static;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.btn-cv {
+    background-color: rgb(5, 104, 184);
+    border-color: rgb(5, 104, 184);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: clamp(20px, 1vw + 1rem, 30px);
+}
+.btn-cv:hover {
+    background-color: rgb(3, 85, 150);
+    border-color: rgb(3, 85, 150);
+}
+
+.stack_text{
+    font-size:clamp(10px, 4vw + 1rem, 16px) ;
+}
+
+@media screen and (max-width:700px){
+    .about_me h3{
+        font-size:clamp(10px, 4vw + 1rem, 16px) ;
+        width: auto;
+    }
+}
