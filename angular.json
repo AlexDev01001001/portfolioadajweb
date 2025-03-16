@@ -110,6 +110,9 @@
               "node_modules/plyr/dist/plyr.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
